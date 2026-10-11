@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador PokeAPI</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f9; }
+    input { padding: 8px; font-size: 16px; width: 200px; }
+    button { padding: 8px 15px; font-size: 16px; cursor: pointer; }
+    .card { border: 1px solid #ccc; background: white; padding: 20px; width: 250px; margin-top: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .error { color: red; font-weight: bold; }
+    .loading { color: blue; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Buscador de Pokémon (PokeAPI)</h1>
+  <input type="text" id="pokemonInput" placeholder="Ej. pikachu, charizard...">
+  <button id="searchBtn">Buscar</button>
+
+  <div id="status"></div>
+  <div id="result"></div>
+
+  <!-- Vinculamos el archivo JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
